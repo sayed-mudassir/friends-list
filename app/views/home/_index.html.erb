@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <h1>Friends</h1>
 
@@ -35,3 +35,17 @@
 
 <br>
 
+ -->
+<p id="notice"><% notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4">
+   Login to get your friend list<br>
+   <%= link_to 'login', new_user_session_path , class: 'btn btn-lg btn-dark' %>
+  </h1>
+  <p class="lead"><h2><strong><i>
+    or sign up to create new friend list<br>
+    <%= link_to 'sign up', new_user_registration_path, class: 'btn btn-lg btn-secondary' %>
+  </i></strong></h2></p>
+  
+</div>

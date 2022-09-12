@@ -11,10 +11,15 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
+    <!-- <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+     -->
 
-    <%= render 'share/nav' %>
+
+    <%= render 'share/nav' %><br>
+    <%if notice%>
+    <%= render 'share/alerts' %><br>
+    <%end%>
     <%= yield %>
   </body>
 </html>
